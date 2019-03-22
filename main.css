@@ -1,3 +1,4 @@
+/* Elements Selectors */
 html, body {
     margin: 0;
     padding: 0;
@@ -5,3 +6,21 @@ html, body {
     height: 100%;
     font-family: 'Lato', arial, sans-serif;
 }
+
+/* Class Selectors */
+.header {    
+    background-color: rgb(0, 46, 96);
+    position: fixed;
+	float: left;
+    width: 15%;
+    height: 100%;
+}
+.page {
+    background-color: white;
+    position: relative;
+	float: right;
+    width: 85%;
+    height: 100%;
+}
+
+/* ID Selectors */
