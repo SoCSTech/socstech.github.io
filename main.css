@@ -22,13 +22,33 @@ html, body {
     text-align: center;
     font-size: 1.6em;
 }
-.header .navigation {
-    top: 80%;
+.header .nav-bar {
     position: relative;
+    display: flex;
     background-color: rgb(116, 118, 120);
     width: 100%;
     height: 20%;
+    padding: 0;
+    margin: 0;
 }
+.header .nav-bar .nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+.header .nav-bar .nav-item:hover {
+    background-color: rgb(0, 95, 75);
+}
+
+.header .nav-bar .active {
+    background-color: rgb(95, 95, 95);
+}
+
 .page {
     background-color: white;
     width: 100%;
