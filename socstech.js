@@ -1,3 +1,8 @@
+Vue.component('navbar-items', {
+    props: ['item'],
+    template: "<a class='nav-item' href=''>{{ item.text }}</a>"
+});
+
 var navigationBar = new Vue({
     el: '#navbar',
     data: {
@@ -8,4 +13,4 @@ var navigationBar = new Vue({
             { link: 'contact.html', text: 'Contact Us' }
         ]
     }
-})
+});
