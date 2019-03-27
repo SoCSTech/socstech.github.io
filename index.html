@@ -16,20 +16,9 @@
 </head>
 
 <body>
-    <!-- Page Header Bar -->
-    <div class='header'>
-        <h1 class='header-title'>School of Computer Science Technicians</h1>
-        <div class='nav-bar' id='navbar'>
-            <navbar-items
-                v-for="item in items"
-                v-bind:item="item"
-                v-bind:href="item.link"
-            ></navbar-items>
-        </div>
-    </div>
-    
-    <!-- Page Content Body -->
-    <div class='page'>
+    <div id="app">
+        <header-component name="School of Computer Science Technicians">
+        </header-component>
     </div>
     <script src="socstech.js"></script>
 </body>
