@@ -2,28 +2,30 @@
 <html>
 
 <head>
+    <!-- Page Meta Data -->
     <title>Technicians</title>
     <meta charset="utf-8" />
     <meta name="description" content="A page for the goings on of the Technicians in SoCS" />
     <meta name="author" content="TReed" />
+
+    <!-- CSS, Fonts, etc. -->
     <link rel="stylesheet" type="text/css" href="main.css">
 
+    <!-- Javascript includes -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
+    <!-- Page Header Bar -->
     <div class='header'>
         <h1 class='header-title'>School of Computer Science Technicians</h1>
-        <div class='nav-bar'>
-            <a class='nav-item active' href='index.html'>Home</a>
-            <a class='nav-item' href='guides.html'>Guides</a>
-            <a class='nav-item' href='resources.html'>Resources</a>
-            <a class='nav-item' href='contact.html'>Contact Us</a>
+        <div class='nav-bar' id='navbar'>
+            <a class='nav-item' v-for="item in items" v-bind:href="item.link">{{ item.text }}</a>
         </div>
     </div>
-
+    
+    <!-- Page Content Body -->
     <div class='page'>
-
     </div>
     <script src="socstech.js"></script>
 </body>
