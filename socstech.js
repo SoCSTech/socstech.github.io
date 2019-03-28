@@ -1,4 +1,4 @@
-Vue.component('navbar-items', {
+Vue.component('navigation-items-component', {
     props: ['item'],
     template: "<a class='nav-item' href=''>{{ item.text }}</a>"
 });
@@ -36,7 +36,7 @@ Vue.component('navigation-component', {
     },
     template: `
         <div class='nav-bar'>
-            <navbar-items v-for="item in menuItems" v-bind:item="item" v-bind:href="item.link" v-bind:class="{'active':(item.isActive)}"></navbar-items>
+            <navigation-items-component v-for="item in menuItems" v-bind:item="item" v-bind:href="item.link" v-bind:class="{'active':(item.isActive)}"></navigation-items-component>
         </div>
     `
 });
