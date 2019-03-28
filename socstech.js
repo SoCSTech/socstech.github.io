@@ -1,7 +1,7 @@
 Vue.component('navbar-items', {
     props: ['item'],
     template: "<a class='nav-item' href=''>{{ item.text }}</a>"
-})
+});
 
 Vue.component('header-component', {
     props: ['name'],
@@ -28,8 +28,8 @@ Vue.component('header-component', {
         });
 
         // Return our menuItems to the component
-        return { 
-            menuItems 
+        return {
+            menuItems
         };
     },
     template: `
@@ -40,8 +40,15 @@ Vue.component('header-component', {
         </div>
     </div>
     `
-})
+});
+
+Vue.component('page-component', {
+    template: `
+    <div class='page'>
+    </div>
+    `
+});
 
 var app = new Vue({
     el: '#app'
-})
+});
