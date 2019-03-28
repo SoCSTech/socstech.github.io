@@ -19,7 +19,7 @@ Vue.component('header-component', {
         pageName = pageName.substring(pageName.lastIndexOf('/') + 1);
 
         // Search the array for a page with the name of the current page
-        menuItems.find(function(item) {
+        menuItems.find(function (item) {
             // if the item's link is the same as the name of the current page
             if (item.link == pageName) {
                 // Tell vue to add the active css class
@@ -28,7 +28,9 @@ Vue.component('header-component', {
         });
 
         // Return our menuItems to the component
-        return { menuItems };
+        return { 
+            menuItems 
+        };
     },
     template: `
     <div class='header'>
@@ -36,9 +38,10 @@ Vue.component('header-component', {
         <div class='nav-bar'>
             <navbar-items v-for="item in menuItems" v-bind:item="item" v-bind:href="item.link" v-bind:class="{'active':(item.isActive)}"></navbar-items>
         </div>
-    </div>`
+    </div>
+    `
 })
 
 var app = new Vue({
-    el: '#app',
+    el: '#app'
 })
