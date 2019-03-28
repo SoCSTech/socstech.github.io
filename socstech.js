@@ -3,7 +3,7 @@ Vue.component('navbar-items', {
     template: "<a class='nav-item' href=''>{{ item.text }}</a>"
 });
 
-Vue.component('navigation-bar', {
+Vue.component('navigation-component', {
     data: function () {
         // Our array of the items to render in the navigation bar
         var menuItems = [
