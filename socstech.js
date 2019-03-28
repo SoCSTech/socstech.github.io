@@ -42,10 +42,11 @@ Vue.component('navigation-bar', {
 });
 
 Vue.component('header-component', {
-    props: ['name'],
+    props: ['name', 'image'],
     template: `
     <div class='header'>
         <h1 class='header-title'> {{ name }} </h1>
+        <img class='header-image' v-bind:src="image"></img>
     </div>
     `
 });
