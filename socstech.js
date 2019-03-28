@@ -3,8 +3,7 @@ Vue.component('navbar-items', {
     template: "<a class='nav-item' href=''>{{ item.text }}</a>"
 });
 
-Vue.component('header-component', {
-    props: ['name'],
+Vue.component('navigation-bar', {
     data: function () {
         // Our array of the items to render in the navigation bar
         var menuItems = [
@@ -33,11 +32,17 @@ Vue.component('header-component', {
         };
     },
     template: `
-    <div class='header'>
-        <h1 class='header-title'> {{ name }} </h1>
         <div class='nav-bar'>
             <navbar-items v-for="item in menuItems" v-bind:item="item" v-bind:href="item.link" v-bind:class="{'active':(item.isActive)}"></navbar-items>
         </div>
+    `
+});
+
+Vue.component('header-component', {
+    props: ['name'],
+    template: `
+    <div class='header'>
+        <h1 class='header-title'> {{ name }} </h1>
     </div>
     `
 });
