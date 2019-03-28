@@ -18,9 +18,11 @@ Vue.component('header-component', {
         var pageName = document.location.pathname;
         pageName = pageName.substring(pageName.lastIndexOf('/') + 1);
 
-
+        // Search the array for a page with the name of the current page
         menuItems.find(function(item) {
+            // if the item's link is the same as the name of the current page
             if (item.link == pageName) {
+                // Tell vue to add the active css class
                 item.isActive = true;
             }
         });
