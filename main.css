@@ -46,7 +46,7 @@ html, body {
     font-size: 1em;
 }
 .header .nav-bar .nav-item:hover {
-    background-color: rgb(0, 95, 75);
+    background-color: rgb(95, 95, 95);
 }
 .header .nav-bar .active {
     background-color: rgb(95, 95, 95);
