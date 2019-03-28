@@ -24,6 +24,9 @@ Vue.component('navigation-bar', {
                 // Tell vue to add the active css class
                 item.isActive = true;
             }
+            else {
+                item.isActive = false;
+            }
         });
 
         // Return our menuItems to the component
