@@ -52,9 +52,10 @@ html, body {
     background-color: rgb(95, 95, 95);
 }
 .page {
+    position: relative;
     background-color: white;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* ID Selectors */
