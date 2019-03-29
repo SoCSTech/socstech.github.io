@@ -61,3 +61,20 @@ Vue.component('page-component', {
 var app = new Vue({
     el: '#app'
 });
+
+
+
+// On the windows scroll event
+$(window).scroll(function () {
+    // Get the height of the page-header
+    var headerDivHeight = $('#page-header').height();
+
+    if ($(window).scrollTop() >= headerDivHeight) {
+        // If the windows scroll position is passed the page-header height
+        $('#page-navbar').addClass('fix-navbar-position');        // add the fixed position css class
+    }
+    if ($(window).scrollTop() < headerDivHeight) {
+        // If the scroll is not passed the page-header
+        $('#page-navbar').removeClass('fix-navbar-position');     // remove the fixed position css class
+    }
+});
