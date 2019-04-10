@@ -55,7 +55,8 @@ Vue.component('page-component', {
     props:['page'],
     template: `
     <div id="page-body" class='page' v-if='page == "home"'>
-        <h1 class='header-title'> Home </h1>
+        <home-page-component>
+        </home-page-component>
     </div>
     <div id="page-body" class='page' v-else-if='page == "guide"'>
         <h1 class='header-title'> Guides </h1>
@@ -69,6 +70,12 @@ Vue.component('page-component', {
     <div id="page-body" class='page' v-else>
         <h1 class='header-title'> Unknown </h1>
     </div>
+    `
+});
+
+Vue.component('home-page-component', {
+    template: `
+        <h1 class='header-title'> Home </h1>
     `
 });
 
