@@ -80,7 +80,14 @@ Vue.component('page-component', {
 
 Vue.component('home-page-component', {
     template: `
-        <h1 class='header-title'> Home </h1>
+    <div class='page-content'>
+        <h1 class='content-header'> Title </h1>
+        <div class='staff-members'>
+            <h1 class=''> Item 1 </h1>
+            <h1 class=''> Item 2 </h1>
+            <h1 class=''> Item 3 </h1>
+        </div>
+    </div>
     `
 });
 
