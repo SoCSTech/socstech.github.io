@@ -28,7 +28,7 @@ Vue.component('navigation-component', {
                 item.isActive = false;
             }
         });
-
+        
         // Return our menuItems to the component
         return {
             menuItems
@@ -52,8 +52,19 @@ Vue.component('header-component', {
 });
 
 Vue.component('page-component', {
+    props:['page'],
     template: `
-    <div id="page-body" class='page'>
+    <div id="page-body" class='page' v-if='page == "home"'>
+        <h1 class='header-title'> Home </h1>
+    </div>
+    <div id="page-body" class='page' v-else-if='page == "guide"'>
+        <h1 class='header-title'> Guides </h1>
+    </div>
+    <div id="page-body" class='page' v-else-if='page == "resources"'>
+        <h1 class='header-title'> Resources </h1>
+    </div>
+    <div id="page-body" class='page' v-else-if='page == "contact"'>
+        <h1 class='header-title'> Contact Us </h1>
     </div>
     `
 });
@@ -61,8 +72,6 @@ Vue.component('page-component', {
 var app = new Vue({
     el: '#app'
 });
-
-
 
 // On the windows scroll event
 $(window).scroll(function () {
