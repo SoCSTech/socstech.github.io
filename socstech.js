@@ -66,6 +66,9 @@ Vue.component('page-component', {
     <div id="page-body" class='page' v-else-if='page == "contact"'>
         <h1 class='header-title'> Contact Us </h1>
     </div>
+    <div id="page-body" class='page' v-else>
+        <h1 class='header-title'> Unknown </h1>
+    </div>
     `
 });
 
