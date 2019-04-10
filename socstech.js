@@ -58,15 +58,20 @@ Vue.component('page-component', {
         <home-page-component>
         </home-page-component>
     </div>
+
     <div id="page-body" class='page' v-else-if='page == "guide"'>
-        <h1 class='header-title'> Guides </h1>
+        <guide-page-component>
+        </guide-page-component>
     </div>
+
     <div id="page-body" class='page' v-else-if='page == "resources"'>
         <h1 class='header-title'> Resources </h1>
     </div>
+
     <div id="page-body" class='page' v-else-if='page == "contact"'>
         <h1 class='header-title'> Contact Us </h1>
     </div>
+
     <div id="page-body" class='page' v-else>
         <h1 class='header-title'> Unknown </h1>
     </div>
@@ -76,6 +81,18 @@ Vue.component('page-component', {
 Vue.component('home-page-component', {
     template: `
         <h1 class='header-title'> Home </h1>
+    `
+});
+
+Vue.component('guide-page-component', {
+    template: `
+    <div class='page-content'>
+        <h1 class=''> Guides </h1>
+        <div>
+            <h1 class=''> Guides2 </h1>
+            <h1 class=''> Guides3 </h1>
+        </div>
+    </div>
     `
 });
 
