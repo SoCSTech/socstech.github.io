@@ -70,7 +70,8 @@ Vue.component('page-component', {
     </div>
 
     <div id="page-body" class='page' v-else-if='page == "contact"'>
-        <h1 class='header-title'> Contact Us </h1>
+        <contact-page-component>
+        </contact-page-component>
     </div>
 
     <div id="page-body" class='page' v-else>
@@ -110,6 +111,18 @@ Vue.component('resources-page-component', {
         <h1 class=''> Resources </h1>
         <div>
             <p class=''> Resources test text </p>
+        </div>
+    </div>
+    `
+});
+
+Vue.component('contact-page-component', {
+    template: `
+    <div class='page-content'>
+        <h1 class=''> Contact Us </h1>
+        <div>
+            <p class=''> Contact page test text </p>
+            <p class=''> Contact page test text </p>
         </div>
     </div>
     `
