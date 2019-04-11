@@ -65,7 +65,8 @@ Vue.component('page-component', {
     </div>
 
     <div id="page-body" class='page' v-else-if='page == "resources"'>
-        <h1 class='header-title'> Resources </h1>
+        <resources-page-component>
+        </resources-page-component>
     </div>
 
     <div id="page-body" class='page' v-else-if='page == "contact"'>
@@ -98,6 +99,17 @@ Vue.component('guide-page-component', {
         <div>
             <h1 class=''> Guides2 </h1>
             <h1 class=''> Guides3 </h1>
+        </div>
+    </div>
+    `
+});
+
+Vue.component('resources-page-component', {
+    template: `
+    <div class='page-content'>
+        <h1 class=''> Resources </h1>
+        <div>
+            <p class=''> Resources test text </p>
         </div>
     </div>
     `
