@@ -55,9 +55,9 @@ Vue.component('staff-profile-component', {
     props: ['staff'],
     template: `
     <div class='staff-members'>
-        <img></img>
-        <h1 class=''> Name </h1>
-        <h1 class=''> Role </h1>
+        <img v-bind:src="staff.image"></img>
+        <h1 class=''> {{ staff.name }} </h1>
+        <h1 class=''> {{ staff.role }} </h1>
     </div>`
 });
 
