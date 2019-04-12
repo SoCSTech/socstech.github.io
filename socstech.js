@@ -52,6 +52,7 @@ Vue.component('header-component', {
 });
 
 Vue.component('staff-profile-component', {
+    props: ['staff'],
     template: `
     <div class='staff-members'>
         <img></img>
