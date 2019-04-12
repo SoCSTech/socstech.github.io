@@ -51,6 +51,15 @@ Vue.component('header-component', {
     `
 });
 
+Vue.component('staff-profile-component', {
+    template: `
+    <div class='staff-members'>
+        <img></img>
+        <h1 class=''> Name </h1>
+        <h1 class=''> Role </h1>
+    </div>`
+});
+
 Vue.component('home-page-component', {
     template: `
     <div class='page-content'>
