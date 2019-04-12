@@ -74,7 +74,7 @@ Vue.component('home-page-component', {
     },
     template: `
     <div class='page-content'>
-        <h1 class='content-header'> Title </h1>
+        <h1 class='content-header'> Our Team </h1>
         <div class='staff-members'>
             <staff-profile-component v-for="staff in staffMembers" v-bind:staff="staff"></staff-profile-component>
         </div>
