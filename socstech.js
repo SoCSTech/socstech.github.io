@@ -51,35 +51,6 @@ Vue.component('header-component', {
     `
 });
 
-Vue.component('page-component', {
-    props:['page'],
-    template: `
-    <div id="page-body" class='page' v-if='page == "home"'>
-        <home-page-component>
-        </home-page-component>
-    </div>
-
-    <div id="page-body" class='page' v-else-if='page == "guide"'>
-        <guide-page-component>
-        </guide-page-component>
-    </div>
-
-    <div id="page-body" class='page' v-else-if='page == "resources"'>
-        <resources-page-component>
-        </resources-page-component>
-    </div>
-
-    <div id="page-body" class='page' v-else-if='page == "contact"'>
-        <contact-page-component>
-        </contact-page-component>
-    </div>
-
-    <div id="page-body" class='page' v-else>
-        <h1 class='header-title'> Unknown </h1>
-    </div>
-    `
-});
-
 Vue.component('home-page-component', {
     template: `
     <div class='page-content'>
@@ -124,6 +95,35 @@ Vue.component('contact-page-component', {
             <p class=''> Contact page test text </p>
             <p class=''> Contact page test text </p>
         </div>
+    </div>
+    `
+});
+
+Vue.component('page-component', {
+    props:['page'],
+    template: `
+    <div id="page-body" class='page' v-if='page == "home"'>
+        <home-page-component>
+        </home-page-component>
+    </div>
+
+    <div id="page-body" class='page' v-else-if='page == "guide"'>
+        <guide-page-component>
+        </guide-page-component>
+    </div>
+
+    <div id="page-body" class='page' v-else-if='page == "resources"'>
+        <resources-page-component>
+        </resources-page-component>
+    </div>
+
+    <div id="page-body" class='page' v-else-if='page == "contact"'>
+        <contact-page-component>
+        </contact-page-component>
+    </div>
+
+    <div id="page-body" class='page' v-else>
+        <h1 class='header-title'> Unknown </h1>
     </div>
     `
 });
