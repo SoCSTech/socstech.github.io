@@ -61,13 +61,21 @@ Vue.component('staff-profile-component', {
 });
 
 Vue.component('home-page-component', {
+    data: function() {
+        var staffMembers = [
+            { name: "Matt Ashton", role: "Technical Resource Manager", image: ""},
+            { name: "Tom Reed", role: "Technician", image: ""},
+            { name: "Jason Hall", role: "Technician", image: ""}
+        ];
+        return {
+            staffMembers
+        };
+    },
     template: `
     <div class='page-content'>
         <h1 class='content-header'> Title </h1>
         <div class='staff-members'>
-            <h1 class=''> Item 1 </h1>
-            <h1 class=''> Item 2 </h1>
-            <h1 class=''> Item 3 </h1>
+            <staff-profile-component v-for="staff in staffMembers" v-bind:staff="staff"></staff-profile-component>
         </div>
     </div>
     `
