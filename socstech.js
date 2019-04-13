@@ -64,9 +64,9 @@ Vue.component('staff-profile-component', {
 Vue.component('home-page-component', {
     data: function() {
         var staffMembers = [
-            { name: "Matt Ashton", role: "Technical Resource Manager", image: ""},
-            { name: "Tom Reed", role: "Technician", image: ""},
-            { name: "Jason Hall", role: "Technician", image: ""}
+            { name: "Matt Ashton", role: "Technical Resource Manager", image: "content/profile.png"},
+            { name: "Tom Reed", role: "Technician", image: "content/profile.png"},
+            { name: "Jason Hall", role: "Technician", image: "content/profile.png"}
         ];
         return {
             staffMembers
