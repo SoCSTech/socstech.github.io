@@ -63,13 +63,42 @@ html, body {
     height: 70%;
 }
 .page .page-content {
-
+    position: relative;
+    margin: 1% 5%;
+    padding: 0;
+    width: auto;
+    height: 100%;
+}
+.page .page-content .content-header {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
 }
 .page .page-content .team-profiles {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 1% 0 0 0;
 }
 .page .page-content .team-profiles .profile {
-
+    position: relative;
+    border: 2px solid black;
+    margin: 1% 1%;
+    width: 400px;
+    text-align: center;
+}
+.page .page-content .team-profiles .profile .staff-picture {
+    width: 250px;
+    height: 250px;
+}
+.page .page-content .team-profiles .profile .staff-name {
+    font-size: 2em;
+}
+.page .page-content .team-profiles .profile .staff-role {
+    font-size: 1em;
 }
 
 /* ID Selectors */
