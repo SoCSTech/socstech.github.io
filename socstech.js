@@ -28,7 +28,7 @@ Vue.component('navigation-component', {
                 item.isActive = false;
             }
         });
-        
+
         // Return our menuItems to the component
         return {
             menuItems
@@ -62,11 +62,32 @@ Vue.component('staff-profile-component', {
 });
 
 Vue.component('home-page-component', {
-    data: function() {
+    data: function () {
         var staffMembers = [
-            { name: "Matt Ashton", role: "Technical Resource Manager", image: "content/profile.png"},
-            { name: "Tom Reed", role: "Technician", image: "content/profile.png"},
-            { name: "Jason Hall", role: "Technician", image: "content/profile.png"}
+            { 
+                name: "Matt Ashton", 
+                role: "Technical Resource Manager", 
+                image: "content/profile.png",
+                speciality: "",
+                staff_profile: "",
+                github: ""
+            },
+            { 
+                name: "Tom Reed", 
+                role: "Technician", 
+                image: "content/profile.png",
+                speciality: "Linux and OpenGL",
+                staff_profile: "https://staff.lincoln.ac.uk/treed",
+                github: "https://github.com/treed1104"
+            },
+            { 
+                name: "Jason Hall", 
+                role: "Technician", 
+                image: "content/profile.png",
+                speciality: "",
+                staff_profile: "https://staff.lincoln.ac.uk/jahall",
+                github: ""
+            }
         ];
         return {
             staffMembers
@@ -118,7 +139,7 @@ Vue.component('contact-page-component', {
 });
 
 Vue.component('page-component', {
-    props:['page'],
+    props: ['page'],
     template: `
     <div id="page-body" class='page' v-if='page == "home"'>
         <home-page-component>
