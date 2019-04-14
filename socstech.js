@@ -58,6 +58,7 @@ Vue.component('staff-profile-component', {
         <img class='staff-picture' v-bind:src="staff.image"></img>
         <h1 class='staff-name'> {{ staff.name }} </h1>
         <h2 class='staff-role'> {{ staff.role }} </h2>
+        <h2 class='staff-specialty' v-if='staff.speciality !== ""'> {{ staff.specialty }} </h2>
     </div>`
 });
 
@@ -76,7 +77,7 @@ Vue.component('home-page-component', {
                 name: "Tom Reed", 
                 role: "Technician", 
                 image: "content/profile.png",
-                speciality: "Linux and OpenGL",
+                speciality: "",
                 staff_profile: "https://staff.lincoln.ac.uk/treed",
                 github: "https://github.com/treed1104"
             },
