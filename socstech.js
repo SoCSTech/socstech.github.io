@@ -93,7 +93,7 @@ Vue.component('home-page-component', {
                 image: "content/profile.png",
                 speciality: "Frontline Tech support",
                 staff_profile: "https://staff.lincoln.ac.uk/jahall",
-                github: ""
+                github: "https://github.com/Hullabaloo94"
             }
         ];
         return {
