@@ -101,7 +101,18 @@ html, body {
     font-size: 1em;
 }
 .page .page-content .team-profiles .profile .link-icon {
-    
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+.page .page-content .team-profiles .profile .link-icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* ID Selectors */
