@@ -69,7 +69,7 @@ Vue.component('home-page-component', {
                 name: "Matt Ashton", 
                 role: "Technical Resource Manager", 
                 image: "content/profile.png",
-                speciality: "",
+                speciality: "Infrastructure",
                 staff_profile: "",
                 github: ""
             },
@@ -77,7 +77,7 @@ Vue.component('home-page-component', {
                 name: "Tom Reed", 
                 role: "Technician", 
                 image: "content/profile.png",
-                speciality: "",
+                speciality: "Development and Linux",
                 staff_profile: "https://staff.lincoln.ac.uk/treed",
                 github: "https://github.com/treed1104"
             },
@@ -85,7 +85,7 @@ Vue.component('home-page-component', {
                 name: "Jason Hall", 
                 role: "Technician", 
                 image: "content/profile.png",
-                speciality: "",
+                speciality: "Frontline Tech support",
                 staff_profile: "https://staff.lincoln.ac.uk/jahall",
                 github: ""
             }
