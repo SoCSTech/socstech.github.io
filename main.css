@@ -91,8 +91,7 @@ html, body {
     text-align: center;
 }
 .page .page-content .team-profiles .profile .staff-picture {
-    width: 380px;
-    height: 500px;
+    width: 90%;
 }
 .page .page-content .team-profiles .profile .staff-name {
     font-size: 2em;
