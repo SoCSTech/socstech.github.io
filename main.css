@@ -107,7 +107,7 @@ html, body {
     padding: 0;
     width: 64px;
     height: 64px;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .page .page-content .team-profiles .profile .link-icon a {
     display: block;
