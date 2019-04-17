@@ -153,7 +153,7 @@ Vue.component('page-component', {
         </home-page-component>
     </div>
 
-    <div id="page-body" class='page' v-else-if='page == "guide"'>
+    <div id="page-body" class='page' v-else-if='page == "guides"'>
         <guide-page-component>
         </guide-page-component>
     </div>
