@@ -113,10 +113,9 @@ Vue.component('home-page-component', {
 Vue.component('guide-page-component', {
     template: `
     <div class='page-content'>
-        <h1 class=''> Guides </h1>
+        <h1 class='content-header'> Guides </h1>
         <div>
-            <h1 class=''> Guides2 </h1>
-            <h1 class=''> Guides3 </h1>
+            <h1 class=''> UNDER CONSTRUCTION </h1>
         </div>
     </div>
     `
@@ -125,9 +124,9 @@ Vue.component('guide-page-component', {
 Vue.component('resources-page-component', {
     template: `
     <div class='page-content'>
-        <h1 class=''> Resources </h1>
+        <h1 class='content-header'> Resources </h1>
         <div>
-            <p class=''> Resources test text </p>
+            <h1 class=''> UNDER CONSTRUCTION </h1>
         </div>
     </div>
     `
@@ -136,10 +135,9 @@ Vue.component('resources-page-component', {
 Vue.component('contact-page-component', {
     template: `
     <div class='page-content'>
-        <h1 class=''> Contact Us </h1>
+        <h1 class='content-header'> Resources </h1>
         <div>
-            <p class=''> Contact page test text </p>
-            <p class=''> Contact page test text </p>
+            <h1 class=''> UNDER CONSTRUCTION </h1>
         </div>
     </div>
     `
