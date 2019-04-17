@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Page Meta Data -->
+    <title>Technicians</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A page for the goings on of the Technicians in SoCS" />
+    <meta name="author" content="TReed" />
+
+    <!-- CSS, Fonts, etc. -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Javascript includes -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Page Header bar (Image + Text) -->
+        <header-component name="School of Computer Science Technicians" image="">
+        </header-component>
+
+        <!-- Navigation bar, add pages to the config in the socstech.js file -->
+        <navigation-component>
+        </navigation-component>
+
+        <!-- Page body -->
+        <page-component page="contact">
+        </page-component>
+    </div>
+    <script src="socstech.js"></script>
+</body>
+
+</html>
