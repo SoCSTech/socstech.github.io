@@ -135,7 +135,7 @@ Vue.component('resources-page-component', {
 Vue.component('contact-page-component', {
     template: `
     <div class='page-content'>
-        <h1 class='content-header'> Resources </h1>
+        <h1 class='content-header'> Contact Us </h1>
         <div>
             <h1 class=''> UNDER CONSTRUCTION </h1>
         </div>
