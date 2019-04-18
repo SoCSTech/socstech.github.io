@@ -66,12 +66,12 @@ html, body {
     padding: 0;
     width: auto;
     height: 100%;
+    padding: 2% 0 10% 0;
 }
 .page .page-content .content-header {
     text-align: center;
     font-size: 2em;
     margin: 0;
-    padding: 2% 0 0 0;
 }
 .page .page-content .team-profiles {
     display: flex;
