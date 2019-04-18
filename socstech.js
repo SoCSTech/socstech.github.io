@@ -1,3 +1,13 @@
+Vue.component('header-component', {
+    props: ['name', 'image'],
+    template: `
+    <div id="page-header" class='header'>
+        <h1 class='header-title'> {{ name }} </h1>
+        <img class='header-image' v-bind:src="image"></img>
+    </div>
+    `
+});
+
 Vue.component('navigation-items-component', {
     props: ['item'],
     template: "<a class='nav-item' href=''>{{ item.text }}</a>"
@@ -38,16 +48,6 @@ Vue.component('navigation-component', {
         <div id='page-navbar' class='nav-bar'>
             <navigation-items-component v-for="item in menuItems" v-bind:item="item" v-bind:href="item.link" v-bind:class="{'active':(item.isActive)}"></navigation-items-component>
         </div>
-    `
-});
-
-Vue.component('header-component', {
-    props: ['name', 'image'],
-    template: `
-    <div id="page-header" class='header'>
-        <h1 class='header-title'> {{ name }} </h1>
-        <img class='header-image' v-bind:src="image"></img>
-    </div>
     `
 });
 
