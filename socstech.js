@@ -172,6 +172,13 @@ Vue.component('page-component', {
     `
 });
 
+Vue.component('footer-component', {
+    template: `
+    <div>
+    </div>
+    `
+});
+
 var app = new Vue({
     el: '#app'
 });
