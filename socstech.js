@@ -102,7 +102,7 @@ Vue.component('home-page-component', {
     },
     template: `
     <div class='page-content'>
-        <h1 class='content-header'> The School of Computer Science Technician Team </h1>
+        <h1 class='content-header'> The School of Computer Science<br>Technician Team </h1>
         <div class='team-profiles'>
             <staff-profile-component v-for="staff in staffMembers" v-bind:staff="staff"></staff-profile-component>
         </div>
