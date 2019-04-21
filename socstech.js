@@ -175,7 +175,7 @@ Vue.component('page-component', {
 Vue.component('footer-component', {
     template: `
     <div class='footer'>
-        <h1 class='footer-text'> Test footer text </h1>
+        <h1 class='footer-text'> Developed by Tom Reed, <br> School of Computer Science </h1>
     </div>
     `
 });
