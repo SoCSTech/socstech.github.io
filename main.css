@@ -122,12 +122,9 @@ html, body {
     height: 20%;
 }
 .footer .footer-logo {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 64px;
-    height: 64px;
+    float: left;
+    width: 100px;
+    height: 100px;
     background-size: 100% 100%;
 }
 .footer .footer-text {
