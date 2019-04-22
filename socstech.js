@@ -173,9 +173,10 @@ Vue.component('page-component', {
 });
 
 Vue.component('footer-component', {
+    props: ['logo'],
     template: `
     <div class='footer'>
-        <img class='footer-logo'></img>
+        <img class='footer-logo' v-bind:src="logo"></img>
         <h1 class='footer-text'> Developed by Tom Reed, <br> School of Computer Science </h1>
     </div>
     `
