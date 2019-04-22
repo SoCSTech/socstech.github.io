@@ -22,7 +22,7 @@ html, body {
     width: 100%;
     text-align: center;
     font-size: 2em;
-    top: 25%;
+    bottom: 25%;
 }
 .header .header-image {
     width: 100%;
