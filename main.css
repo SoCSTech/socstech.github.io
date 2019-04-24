@@ -94,20 +94,20 @@ html, body {
     width: 400px;
     text-align: left;
 }
-.page .page-content .team-profiles .profile .staff-picture {
+.page .page-content .team-profiles .profile .picture {
     width: 100%;
 }
-.page .page-content .team-profiles .profile .staff-name {
+.page .page-content .team-profiles .profile .name {
     font-size: 1.5em;
     padding: 5px 10px 5px 10px;
     margin: 0;
 }
-.page .page-content .team-profiles .profile .staff-role {
+.page .page-content .team-profiles .profile .role {
     font-size: 1.2em;
     padding: 5px 10px 5px 10px;
     margin: 0;
 }
-.page .page-content .team-profiles .profile .staff-specialisation {
+.page .page-content .team-profiles .profile .text {
     font-size: 1.0em;
     padding: 5px 10px 5px 10px;
     margin: 0;
