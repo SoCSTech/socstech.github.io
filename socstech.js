@@ -55,10 +55,10 @@ Vue.component('staff-profile-component', {
     props: ['staff'],
     template: `
     <div class='profile'>
-        <img class='staff-picture' v-bind:src="staff.image"></img>
-        <h1 class='staff-name'> {{ staff.name }} </h1>
-        <h2 class='staff-role'> {{ staff.role }} </h2>
-        <h2 class='staff-specialisation' v-if='staff.speciality !== ""'> {{ staff.speciality }} </h2>
+        <img class='picture' v-bind:src="staff.image"></img>
+        <h1 class='name'> {{ staff.name }} </h1>
+        <h2 class='role'> {{ staff.role }} </h2>
+        <h2 class='text' v-if='staff.speciality !== ""'> {{ staff.text }} </h2>
         <div class='links'>
             <div class='link-icon' style='background-image:url("content/uol_logo.jpg")' v-if='staff.staff_profile !== ""'>
                 <a v-bind:href='staff.staff_profile'></a>
@@ -77,7 +77,7 @@ Vue.component('home-page-component', {
                 name: "Matt Ashton", 
                 role: "Technical Resource Manager", 
                 image: "content/profile.png",
-                speciality: "Infrastructure",
+                text: "Infrastructure",
                 staff_profile: "",
                 github: ""
             },
@@ -85,7 +85,7 @@ Vue.component('home-page-component', {
                 name: "Tom Reed", 
                 role: "Technician", 
                 image: "content/staff_treed.jpg",
-                speciality: "Development and Linux",
+                text: "Development and Linux",
                 staff_profile: "https://staff.lincoln.ac.uk/treed",
                 github: "https://github.com/treed1104"
             },
@@ -93,7 +93,7 @@ Vue.component('home-page-component', {
                 name: "Jason Hall", 
                 role: "Technician", 
                 image: "content/staff_jahall.jpg",
-                speciality: "Frontline Tech support",
+                text: "Frontline Tech support",
                 staff_profile: "https://staff.lincoln.ac.uk/jahall",
                 github: "https://github.com/Hullabaloo94"
             }
