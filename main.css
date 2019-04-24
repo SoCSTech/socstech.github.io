@@ -92,19 +92,25 @@ html, body {
     border-radius: 25px;
     margin: 1% 1%;
     width: 400px;
-    text-align: center;
+    text-align: left;
 }
 .page .page-content .team-profiles .profile .staff-picture {
     width: 100%;
 }
 .page .page-content .team-profiles .profile .staff-name {
     font-size: 1.5em;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
 }
 .page .page-content .team-profiles .profile .staff-role {
-    font-size: 1.0em;
+    font-size: 1.2em;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
 }
 .page .page-content .team-profiles .profile .staff-specialisation {
     font-size: 1.0em;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
 }
 .page .page-content .team-profiles .profile .link-icon {
     position: relative;
