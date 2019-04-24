@@ -109,7 +109,7 @@ html, body {
 .page .page-content .team-profiles .profile .link-icon {
     position: relative;
     display: inline-block;
-    margin: 0;
+    margin: 20px 5px 20px 5px;
     padding: 0;
     width: 64px;
     height: 64px;
