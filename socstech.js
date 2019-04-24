@@ -90,7 +90,7 @@ Vue.component('home-page-component', {
             { 
                 name: "Jason Hall", 
                 role: "Technician", 
-                image: "content/profile.png",
+                image: "content/staff_jahall.jpg",
                 speciality: "Frontline Tech support",
                 staff_profile: "https://staff.lincoln.ac.uk/jahall",
                 github: "https://github.com/Hullabaloo94"
