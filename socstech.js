@@ -77,7 +77,7 @@ Vue.component('home-page-component', {
                 name: "Matt Ashton", 
                 role: "Technical Resource Manager", 
                 image: "content/profile.png",
-                text: "Infrastructure",
+                text: "As the Technical resource manager, Matt oversees the all of the equipment and resources available to the school. He specialises in the improvement of school's infrastructure and backbone resources.",
                 staff_profile: "",
                 github: ""
             },
@@ -85,7 +85,7 @@ Vue.component('home-page-component', {
                 name: "Tom Reed", 
                 role: "Technician", 
                 image: "content/staff_treed.jpg",
-                text: "Development and Linux",
+                text: "Tom specialises in the development of the tools and systems used by the team, as well as being our go to Technician for Linux support and our servers.",
                 staff_profile: "https://staff.lincoln.ac.uk/treed",
                 github: "https://github.com/treed1104"
             },
@@ -93,7 +93,7 @@ Vue.component('home-page-component', {
                 name: "Jason Hall", 
                 role: "Technician", 
                 image: "content/staff_jahall.jpg",
-                text: "Frontline Tech support",
+                text: "Jason is our main man on the ground, specialising in frontline technical and hardware support.",
                 staff_profile: "https://staff.lincoln.ac.uk/jahall",
                 github: "https://github.com/Hullabaloo94"
             }
