@@ -98,10 +98,13 @@ html, body {
     width: 100%;
 }
 .page .page-content .team-profiles .profile .staff-name {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .page .page-content .team-profiles .profile .staff-role {
-    font-size: 1em;
+    font-size: 1.0em;
+}
+.page .page-content .team-profiles .profile .staff-specialisation {
+    font-size: 1.0em;
 }
 .page .page-content .team-profiles .profile .link-icon {
     position: relative;
