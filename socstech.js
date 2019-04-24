@@ -59,11 +59,13 @@ Vue.component('staff-profile-component', {
         <h1 class='staff-name'> {{ staff.name }} </h1>
         <h2 class='staff-role'> {{ staff.role }} </h2>
         <h2 class='staff-specialisation' v-if='staff.speciality !== ""'> {{ staff.speciality }} </h2>
-        <div class='link-icon' style='background-image:url("content/uol_logo.jpg")' v-if='staff.staff_profile !== ""'>
-            <a v-bind:href='staff.staff_profile'></a>
-        </div>
-        <div class='link-icon' style='background-image:url("content/github.png")' v-if='staff.github !== ""'>
-            <a v-bind:href='staff.github'></a>
+        <div class='links'>
+            <div class='link-icon' style='background-image:url("content/uol_logo.jpg")' v-if='staff.staff_profile !== ""'>
+                <a v-bind:href='staff.staff_profile'></a>
+            </div>
+            <div class='link-icon' style='background-image:url("content/github.png")' v-if='staff.github !== ""'>
+                <a v-bind:href='staff.github'></a>
+            </div>
         </div>
     </div>`
 });
