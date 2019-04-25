@@ -96,7 +96,9 @@ html, body {
     text-align: left;
 }
 .page .page-content .team-profiles .profile .picture {
-    width: 100%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
 .page .page-content .team-profiles .profile .name {
     font-size: 1.5em;
