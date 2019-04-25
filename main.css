@@ -92,7 +92,7 @@ html, body {
     border-radius: 25px;
     margin: 1% 1%;
     width: 400px;
-    height: 800px;
+    height: 600px;
     text-align: left;
 }
 .page .page-content .team-profiles .profile .picture {
@@ -124,10 +124,10 @@ html, body {
 .page .page-content .team-profiles .profile .link-icon {
     position: relative;
     display: inline-block;
-    margin: 20px 5px 20px 5px;
+    margin: 5px 5px 5px 5px;
     padding: 0;
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
     background-size: 100% 100%;
 }
 .page .page-content .team-profiles .profile .link-icon a {
